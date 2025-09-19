@@ -1,5 +1,5 @@
 <script setup>
-import NavbarComponent from '@/components/NavbarComponent.vue';
+import NavbarLogoYTexto from '@/components/NavbarLogoYTexto.vue';
 
 let texto = "Bienvenido a  aroma y luz  donde\n" +
 "cada vela es una invitación a conectar\n" +
@@ -22,11 +22,35 @@ let texto = "Bienvenido a  aroma y luz  donde\n" +
 
 <template>
     <div>
-        <NavbarComponent :txt="texto"/>
+        <NavbarLogoYTexto :txt="texto"/>
+        <hr>
+        <div class="nuestrosProducts">
+            <h2>NUESTROS PRODUCTOS</h2>
+        </div>
     </div>
 </template>
 
 
-<style>
+<style scoped>
+hr {
+  border: 0;
+  height: 8px;
+  background-color: white;
+  width: 100%;
+}
+
+.nuestrosProducts {
+    background-color: rgb(139, 100, 13);
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
 
 </style>

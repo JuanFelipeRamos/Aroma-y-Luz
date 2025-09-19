@@ -11,16 +11,17 @@ const props = defineProps({
         <div class="container-left">
             <div class="options">
                 <ul>
-                    <li id="home">HOME</li>
-                    <li id="contact">CONTACTO</li>
-                    <li id="sobreNos">SOBRE NOSOTROS</li>
+                    <router-link to="/"><li id="home">HOME</li></router-link>
+                    <router-link to="/Contacto"><li id="contact">CONTACTO</li></router-link>
+                    <router-link to="/SobreNosotros"><li id="sobreNos">SOBRE NOSOTROS</li></router-link>
                 </ul>
             </div>
             <div class="linea">
                 <hr>
             </div>
             <div class="containerTexto">
-                <p>{{ txt }}</p>
+                <p v-html="txt"></p>
+
             </div>
         </div>
         <div class="container-right">
@@ -101,6 +102,27 @@ hr {
 
 .imgLogo {
     width: 410px;
+    animation: bajar 1.5s ease-out forwards, flotar 2s ease-in-out infinite;
+}
+
+@keyframes bajar {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
 }
 
 p {
