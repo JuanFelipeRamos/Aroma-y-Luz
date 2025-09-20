@@ -1,70 +1,78 @@
 <script setup>
+import Footer from '../components/Footer.vue';
+
 </script>
 
 
 <template>
-    <div class="divPadre">
-        <div class="container-left">
-            <div class="options">
-                <ul>
-                    <router-link to="/"><li id="home">HOME</li></router-link>
-                    <router-link to="/Contacto"><li id="contact">CONTACTO</li></router-link>
-                    <router-link to="/SobreNosotros"><li id="sobreNos">SOBRE NOSOTROS</li></router-link>
-                </ul>
-            </div>
-            <div class="linea">
-                <hr>
-            </div>
-            <div class="containerTexto">
-                <p class="subTitle"><strong>Nuestros medios de contacto:</strong></p>
-                <p class="redSocial">
-                    <i>
-                        <font-awesome-icon icon="fa-brands fa-whatsapp" />
-                    </i>
-                    <strong>Whatsapp:</strong> 3248428754
-                </p>
-                <p class="redSocial">
-                    <i>
-                        <font-awesome-icon icon="fa-solid fa-envelope" />
-                    </i>
-                    <strong>Gmail:</strong> aromayluz@gmail.com
-                </p>
-                <a class="enlace" href="https://www.instagram.com/aromayluz2025?igsh=eTZ4M2pncnNkcXo2" target="_blank">
-                    <p class="redSocial">
-                        <i>
-                            <font-awesome-icon icon="fa-brands fa-instagram" />
-                        </i>
-                        <strong>Instagram:</strong> @aromayluz2025
-                    </p>
-                </a>
-                <a class="enlace" href="https://www.facebook.com/share/1HrptSLafj/" target="_blank">
-                    <p class="redSocial">
-                        <i>
-                            <font-awesome-icon icon="fa-brands fa-facebook" />
-                        </i>
-                        <strong>Facebook:</strong> aromayluz2025
-                    </p>
-                </a>
-                <a class="enlace" href="https://whatsapp.com/channel/0029VbALMGG6xCSLQysWJD2n" target="_blank">
+    <div class="container">
+        <div class="divLeftYRight">
+            <div class="container-left">
+                <div class="options">
+                    <ul>
+                        <router-link to="/"><li id="home">HOME</li></router-link>
+                        <router-link to="/Contacto"><li id="contact">CONTACTO</li></router-link>
+                        <router-link to="/SobreNosotros"><li id="sobreNos">SOBRE NOSOTROS</li></router-link>
+                    </ul>
+                </div>
+                <div class="linea">
+                    <hr>
+                </div>
+                <div class="containerTexto">
+                    <p class="subTitle"><strong>Nuestros medios de contacto:</strong></p>
                     <p class="redSocial">
                         <i>
                             <font-awesome-icon icon="fa-brands fa-whatsapp" />
                         </i>
-                        <strong>Comunidad de whatsapp:</strong> Velas Aromas Y Luz
+                        <strong>Whatsapp:</strong> 3248428754
                     </p>
-                </a>
-
+                    <p class="redSocial">
+                        <i>
+                            <font-awesome-icon icon="fa-solid fa-envelope" />
+                        </i>
+                        <strong>Gmail:</strong> aromayluz@gmail.com
+                    </p>
+                    <a class="enlace" href="https://www.instagram.com/aromayluz2025?igsh=eTZ4M2pncnNkcXo2" target="_blank">
+                        <p class="redSocial">
+                            <i>
+                                <font-awesome-icon icon="fa-brands fa-instagram" />
+                            </i>
+                            <strong>Instagram:</strong> @aromayluz2025
+                        </p>
+                    </a>
+                    <a class="enlace" href="https://www.facebook.com/share/1HrptSLafj/" target="_blank">
+                        <p class="redSocial">
+                            <i>
+                                <font-awesome-icon icon="fa-brands fa-facebook" />
+                            </i>
+                            <strong>Facebook:</strong> aromayluz2025
+                        </p>
+                    </a>
+                    <a class="enlace" href="https://whatsapp.com/channel/0029VbALMGG6xCSLQysWJD2n" target="_blank">
+                        <p class="redSocial">
+                            <i>
+                                <font-awesome-icon icon="fa-brands fa-whatsapp" />
+                            </i>
+                            <strong>Comunidad de whatsapp:</strong> Velas Aromas Y Luz
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="container-right">
+                <img src="/public/logo.jpg" alt="Logo Aroma y Luz" class="imgLogo">
             </div>
         </div>
-        <div class="container-right">
-            <img src="/public/logo.jpg" alt="Logo Aroma y Luz" class="imgLogo">
-        </div>
+        <Footer />
     </div>
 </template>
 
 
 <style scoped>
-.divPadre {
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.divLeftYRight {
     display: flex;
     justify-content: space-between;
     height: 100vh;

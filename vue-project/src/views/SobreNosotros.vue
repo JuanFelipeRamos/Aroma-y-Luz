@@ -1,5 +1,6 @@
 <script setup>
 import NavbarLogoYTexto from '@/components/NavbarLogoYTexto.vue';
+import Footer from '@/components/Footer.vue';
 
 let texto = "Creemos que una vela puede ser mucho\n" +
 "más que un simple accesorio. Nuestras velas\n" +
@@ -41,13 +42,14 @@ let texto = "Creemos que una vela puede ser mucho\n" +
                 <p>TRANQUILIDAD A TRAVES DE NUESTRA VELAS.</p>
             </div>
         </div>
+        <Footer />
     </div>
 </template>
 
 <style scoped>
 .misionYVision {
     width: 100%;
-    height: 610px;
+    height: 650px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -56,12 +58,12 @@ let texto = "Creemos que una vela puede ser mucho\n" +
 }
 
 .fondo {
-    position: absolute;         /* Se coloca detrás del texto */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centra la imagen */
+    transform: translate(-50%, -50%);
     width: 600px;
-    object-fit: cover;          /* Ajusta la imagen sin deformarla */
+    object-fit: cover;
     opacity: 0.3;
     z-index: -1;
 }
