@@ -206,4 +206,55 @@ h2 {
     width: 402px;
 }
 
+/* Responsividad */
+@media (max-width: 1024px) {
+  .containerProducts,
+  .containerProducts2 {
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 0;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerProducts,
+  .containerProducts2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  .tarjetaModelo1,
+  .tarjetaModelo2,
+  .jardin,
+  .aromaterapia,
+  .comboIlumin {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .containerProducts,
+  .containerProducts2 {
+    gap: 20px;
+    padding: 15px 0;
+  }
+}
+
 </style>
