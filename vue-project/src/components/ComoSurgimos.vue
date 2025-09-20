@@ -52,4 +52,27 @@ p {
     font-size: 24px;
 }
 
+@media (max-width: 768px) {
+  .divPadre {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container-left, 
+  .container-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .imgLogo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
 </style>

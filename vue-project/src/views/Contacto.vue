@@ -191,4 +191,49 @@ p {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .divLeftYRight {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container-left, 
+  .container-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .options ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    display: block;
+    margin: 15px 0;
+    font-size: 22px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .imgLogo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .subTitle {
+    margin-bottom: 30px;
+  }
+}
+
 </style>

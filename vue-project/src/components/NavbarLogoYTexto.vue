@@ -132,4 +132,63 @@ p {
     font-size: 24px;
 }
 
+@media (max-width: 768px) {
+  .divPadre {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .options {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    margin: 12px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+  }
+
+  #home:hover {
+    margin-right: 0;
+    font-size: 23px;
+  }
+
+  #contact:hover {
+    margin-right: 0;
+    font-size: 23px;
+  }
+
+  #sobreNos:hover {
+    margin-right: 0;
+    font-size: 23px;
+  }
+
+  .imgLogo {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+}
+
 </style>
