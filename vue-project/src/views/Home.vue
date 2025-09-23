@@ -64,12 +64,12 @@ let textoFinal = "La idea nació de esas ganas\n" +
         </div>
         <div class="tarjetas">
             <div class="containerProducts">
-                <TargetaProducto :imageUrl="pinos" name="Dulces pinos" precio="18,000" />
-                <TargetaProducto :imageUrl="mar" name="Vida marina" precio="15,000" />
+                <TargetaProducto :imageUrl="pinos" name="Dulces pinos" precio="18,000" :numVela="1" />
+                <TargetaProducto :imageUrl="mar" name="Vida marina" precio="15,000" :numVela="2" />
             </div>
             <div class="containerProducts2">
-                <TargetaProducto :imageUrl="rosa" name="Destello de rosas" precio="25,000" />
-                <TargetaProducto :imageUrl="aurora" name="Aurora de cristal" precio="20,000" />
+                <TargetaProducto :imageUrl="rosa" name="Destello de rosas" precio="25,000" :numVela="3" />
+                <TargetaProducto :imageUrl="aurora" name="Aurora de cristal" precio="20,000" :numVela="4" />
             </div>
         </div>
         <div class="nuestrosProducts">
@@ -77,8 +77,8 @@ let textoFinal = "La idea nació de esas ganas\n" +
         </div>
         <div class="tarjetas2">
             <div class="containerProducts">
-                <TargetaProducto :imageUrl="moldes1" name="Moldes 1" precio="7,000" class="tarjetaModelo1" />
-                <TargetaProducto :imageUrl="moldes2" name="Moldes 2" precio="5,000" class="tarjetaModelo2" />
+                <TargetaProducto :imageUrl="moldes1" name="Moldes 1" precio="7,000" class="tarjetaModelo1" :numVela="5" />
+                <TargetaProducto :imageUrl="moldes2" name="Moldes 2" precio="5,000" class="tarjetaModelo2" :numVela="6" />
             </div>
         </div>
         <div class="nuestrosProducts">
@@ -86,11 +86,11 @@ let textoFinal = "La idea nació de esas ganas\n" +
         </div>
         <div class="tarjetas3">
             <div class="containerProducts">
-                <TargetaProducto :imageUrl="jardin" name="Jardin de luz" precio="15,000" class="jardin" />
-                <TargetaProducto :imageUrl="aromaterapia" name="Aromaterapia" precio="15,000" class="aromaterapia" />
+                <TargetaProducto :imageUrl="jardin" name="Jardin de luz" precio="15,000" class="jardin" :numVela="7" />
+                <TargetaProducto :imageUrl="aromaterapia" name="Aromaterapia" precio="15,000" class="aromaterapia" :numVela="8" />
             </div>
             <div class="containerProducts">
-                <TargetaProducto :imageUrl="combo" name="Combo iluminación" precio="30,000 x 3" class="comboIlumin" />
+                <TargetaProducto :imageUrl="combo" name="Combo iluminación" precio="30,000 x 3" class="comboIlumin" :numVela="9" />
             </div>
         </div>
         <div class="info">
